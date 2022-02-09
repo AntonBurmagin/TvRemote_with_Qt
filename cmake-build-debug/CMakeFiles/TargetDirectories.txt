@@ -1,0 +1,4 @@
+C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/cmake-build-debug/CMakeFiles/hw_37_4_3_TV_remote.dir
+C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/cmake-build-debug/CMakeFiles/hw_37_4_3_TV_remote_autogen.dir

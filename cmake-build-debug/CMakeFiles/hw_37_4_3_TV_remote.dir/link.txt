@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\hw_37_4_3_TV_remote.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\hw_37_4_3_TV_remote.dir/objects.a @CMakeFiles\hw_37_4_3_TV_remote.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\hw_37_4_3_TV_remote.dir/objects.a -Wl,--no-whole-archive  -o hw_37_4_3_TV_remote.exe -Wl,--out-implib,libhw_37_4_3_TV_remote.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hw_37_4_3_TV_remote.dir\linklibs.rsp

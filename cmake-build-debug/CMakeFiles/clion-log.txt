@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\burma\Desktop\C++\HW\HW-37 Qt Designer and UI\hw-37.4.3 TV remote"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/cmake-build-debug
