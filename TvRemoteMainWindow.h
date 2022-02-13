@@ -18,6 +18,7 @@ public:
     time_t timeEnd=0;
     int channel = -1;
     int volume = 0;
+    QTimer *timer = nullptr;
 
 
     TvRemoteMainWindow (QWidget *parent = nullptr) : QMainWindow(parent) {}
@@ -41,7 +42,10 @@ public slots:
     void changeChannel () {
         lineEdit->setText("playing: " + QString::number(channel) + ", volume: " + QString::number(volume));
         resetTime();
+        timer->stop();
+        timer=nullptr;
     }
+
     bool timeOff () {
         if (timeStart!=0) {
             timeEnd = time(0);
@@ -50,6 +54,7 @@ public slots:
         }
         return false;
     }
+
     time_t getTimeStart () {
         return timeStart;
     }
@@ -66,8 +71,18 @@ public slots:
                 lineEdit->setText(lineEdit->text() + number);
                 channel = lineEdit->text().toInt();
             }
+            if (timer==nullptr && lineEdit->text().count()<2) {
+                timer=new QTimer(0);
+                QObject::connect(timer, &QTimer::timeout, [&]() {
+                    std::cout << timeStart << " - " << timeEnd << std::endl;
+                    if (timeOff())
+                        changeChannel();
+                });
+                timer->start(1000);
+            }
         }
     }
+
     void zero() {
         buttonSame("0");
     };

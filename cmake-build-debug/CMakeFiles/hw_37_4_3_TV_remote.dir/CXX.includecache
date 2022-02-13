@@ -1433,8 +1433,6 @@ QMainWindow
 -
 ./ui_tv_remote.h
 -
-QTimer
--
 TvRemoteMainWindow.h
 C:/Users/burma/Desktop/C++/HW/HW-37 Qt Designer and UI/hw-37.4.3 TV remote/TvRemoteMainWindow.h
 
