@@ -40,13 +40,15 @@ public slots:
         } else {
             channel=-1;
             lineEdit->setText("");
+            if (timer->isActive())
+                resetTime();
         }
     };
 
     void resetTime () {
         timeStart=0;
         timeEnd=0;
-        if(timer!= nullptr && timer->isActive()) {
+        if(timer->isActive()) {
             timer->stop();
         }
     }
