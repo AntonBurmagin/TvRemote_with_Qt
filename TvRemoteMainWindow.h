@@ -28,6 +28,15 @@ public slots:
         if (channel==-1) {
             channel = 0;
             lineEdit->setText("playing: "+QString::number(channel) + ", volume: " + QString::number(volume));
+            if (timer==nullptr) {
+                std::cout << "new timer created!" << std::endl;
+                timer = new QTimer;
+                QObject::connect(timer, &QTimer::timeout, [&]() {
+                    std::cout << timeStart << " - " << timeEnd << std::endl;
+                    if (timeOff())
+                        changeChannel();
+                });
+            }
         } else {
             channel=-1;
             lineEdit->setText("");
@@ -37,13 +46,14 @@ public slots:
     void resetTime () {
         timeStart=0;
         timeEnd=0;
+        if(timer!= nullptr && timer->isActive()) {
+            timer->stop();
+        }
     }
 
     void changeChannel () {
         lineEdit->setText("playing: " + QString::number(channel) + ", volume: " + QString::number(volume));
         resetTime();
-        timer->stop();
-        timer=nullptr;
     }
 
     bool timeOff () {
@@ -71,13 +81,7 @@ public slots:
                 lineEdit->setText(lineEdit->text() + number);
                 channel = lineEdit->text().toInt();
             }
-            if (timer==nullptr && lineEdit->text().count()<2) {
-                timer=new QTimer(0);
-                QObject::connect(timer, &QTimer::timeout, [&]() {
-                    std::cout << timeStart << " - " << timeEnd << std::endl;
-                    if (timeOff())
-                        changeChannel();
-                });
+            if (lineEdit->text().count()<2) {
                 timer->start(1000);
             }
         }

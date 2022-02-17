@@ -1142,6 +1142,10 @@ C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication
 qapplication.h
 C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h
 
+C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QDesktopWidget
+qdesktopwidget.h
+C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h
+
 C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout
 qgridlayout.h
 C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h
@@ -1430,6 +1434,8 @@ QApplication
 QPushButton
 -
 QMainWindow
+-
+QDesktopWidget
 -
 ./ui_tv_remote.h
 -

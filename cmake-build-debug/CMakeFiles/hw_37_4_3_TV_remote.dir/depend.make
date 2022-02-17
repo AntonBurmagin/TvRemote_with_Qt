@@ -237,6 +237,7 @@ CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication
+CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QDesktopWidget
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout
 CMakeFiles/hw_37_4_3_TV_remote.dir/main.cpp.obj: C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit
